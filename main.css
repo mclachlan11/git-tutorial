@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-content: stretch;
+}
+
+#heads-area {
+    margin: 75px;
+    flex-grow: 1;
+}
+
+.person-frame-inner {
+    display: inline-block;
+    position: absolute;
+    animation: animate 10s linear 0s infinite alternate, animate2 9s linear 0s infinite;
+}
+
+.person-frame-inner p {
+    text-align: center;
+}
+
+.ball {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    object-fit: cover;
+}
+@keyframes animate {
+    0% { left: calc(100% - 150px)}
+    100% { left: 0; }
+}
+
+@keyframes animate2 {
+    0% { top: 25%}
+    37.5% { top: calc(100% - 150px) }
+    87.5% { top: 0% }
+    100% { top: 25%}
+}
