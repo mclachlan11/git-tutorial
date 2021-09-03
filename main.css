@@ -1,24 +1,16 @@
 body {
-    display: flex;
-    align-content: stretch;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
-#heads-area {
-    margin: 75px;
-    flex-grow: 1;
-}
-
-.person-frame-inner {
+.head-container {
     display: inline-block;
     position: absolute;
     animation: animate 10s linear 0s infinite alternate, animate2 9s linear 0s infinite;
 }
 
-.person-frame-inner p {
-    text-align: center;
-}
-
-.ball {
+.head {
     height: 150px;
     width: 150px;
     border-radius: 150px;
