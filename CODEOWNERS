@@ -1,8 +1,0 @@
-# This file tells Github who 'owns' a file. Pull requests that changes one of these files
-# will require a review from one of the code owners.
-
-index.html @maxdg99 @adambricelis @kenzerkay @akundla
-main.css @adambricelis
-main.js @adambricelis
-README.md @adambricelis
-CODEOWNERS @adambricelis
