@@ -7,11 +7,10 @@ fetch('https://api.github.com/repos/code4community/git-tutorial/git/trees/master
             .then(response => response.json())
             .then(data => {
                 const filenames = data.tree.map(element => element.path)
+                const body = document.getElementsByTagName('body')[0]
 
                 filenames.forEach(filename => {
-                    $('body').append(
-                        "<div class=\"head-container\"><img class=\"head\" src=\"images/" + filename + "\"/></div>"
-                    )
+                    body.innerHTML += "<div class=\"head-container\"><img class=\"head\" src=\"images/" + filename + "\"/></div>"
                 })
 
                 const people = document.getElementsByClassName("head-container");
